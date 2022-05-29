@@ -1,5 +1,9 @@
 import React from "react";
 
-export default function Square() {
-  return <span className="square"></span>;
+export default function Square({ symbol, onClick }) {
+  return (
+    <span className="square" onClick={onClick}>
+      {symbol}
+    </span>
+  );
 }
